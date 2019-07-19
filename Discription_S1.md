@@ -1,4 +1,4 @@
-# EVA-1
+# EVA-S1
 EVA-Visual Search and DeepLearning
 
 This is about pixels and color combination used to create the different images . News paper is used 4 different colors 
