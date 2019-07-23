@@ -1,14 +1,17 @@
 # Assignment 1B
 EVA-Visual Search and DeepLearning
 
-1-What are Channels and Kernels (according to EVA)?
-Ans-Kernel is the process or layer where we filter the image or image properties. 
+Q1-What are Channels and Kernels (according to EVA)? 
 
-2-Why should we only (well mostly) use 3x3 Kernels?
-Ans-In 3*3 we have the central horizontal and vertical lines which make process fast.
+Answer: Kernel is the process or layer where we filter the image or image properties. 
 
-3-How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
-Ans-Total Layers we use is - 100 layers
+Q2-Why should we only (well mostly) use 3x3 Kernels? 
+
+Answer: In 3*3 we have the central horizontal and vertical lines which make process fast.
+
+Q3-How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations) 
+
+Answer: Total Layers we use is - 100 layers
 
 199x199=>3x3=>	197x197=>3x3=>	195x195=>3x3=>	193x193=>3x3=>	191x191=>3x3=>	189x189=>3x3=>	187x187=>3x3=>	
 185x185=>3x3=>	183x183=>3x3=>	181x181=>3x3=>	179x179=>3x3=>	177x177=>3x3=>	175x175=>3x3=>	173x173=>3x3=>	
