@@ -2,12 +2,16 @@
 EVA-Visual Search and DeepLearning
 
 Session 2 (25 Jul19):
+
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/4-2ConvolutionSmall.gif)
+
+
 Every image genrate his own values, we don't have any control over them. For example here 3*3 kernel is convolving 4*4 size channel and every square is (represent the value, so here we are looking at the 16 values. Likewise 3*3 kernel is reading each value and values in kernel is unknown. So our end task to change the values by kernel so we can get the feature of the channel (vertical and horizontal edges).
 Green channel is our output channel and 3*3  kernel is returning sum of 9 values to the green channel.Strip is how many pixels kernel passes to move to the next row/column.\
 
 
 
-
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/1%20Zx-ZMLKab7VOCQTxdZ1OAw.gif)
 
 We can see the other example 5*5 image and its convolving on 3*3 kernel . 3x3 kernel has value of 
 0 1 2
@@ -17,7 +21,7 @@ So in the next green layer 3*3 kernel passing the value which will be the sum of
 For example 
 
 
-
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/1%20Zx-ZMLKab7VOCQTxdZ1OAw.gif)
 
 3*0+3*1+2*2+0*2+0*2+1*0+3*0+1*1+2*2=12
 
@@ -40,6 +44,7 @@ Some examples of edge detectors would be:
 
 When we use the horizontal edge detector kernel with the values, as shown above, we get the following result:
 
+![]( https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/conv-line-detection-horizontal-result.jpg)
  
 Let's look at this through some numbers. Let us look at how a vertical edge would look like in an image:
 0.2 0.2 0.9 0.2 0.5
@@ -63,7 +68,7 @@ Example for 400*400 we need total 400/2 =200 layers but applying the max pooling
 
 
 
-
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/13244_2018_639_Fig6_HTML.png)
 
 
  400 | 398 | 396 | 394 | 392 | 390 | MP (2x2) 390/2=195
@@ -73,6 +78,7 @@ Example for 400*400 we need total 400/2 =200 layers but applying the max pooling
 15 | 13 | 11| 9 | 7 | 5 | 3 | 1
 
 
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Session-2/Images/convolution.gif)
 
 To get the set of edges and gradients to represent the whole image we have to use write number of kernel. So on first layer we have to use 32 or 64 kernel and then we have to increase the size. So if we add 32 kernels in the first layer, 64 in second, 128 in third and so on... then our Network is  
  400x400x1     | (3x3)x32     | 398x398x32
