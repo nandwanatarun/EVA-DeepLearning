@@ -1,2 +1,2 @@
-# EVA-DeepLearning
-EVA-Visual Search and DeepLearning
+# EVA-DeepLearning-NEURAL WORD EMBEDDINGS
+
