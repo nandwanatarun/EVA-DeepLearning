@@ -61,9 +61,9 @@ If we start with <Empty> we might Predict Dog. After receiving Dog as the input,
  
   LETS ADD MEMORY TO OUR NETWORK  
 
- ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/1svg.svg)
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/svg.svg)
+
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/svg.png)
 
 
 Elementwise multiplication acts like a router, controlling what goes out and what doesn't. 
