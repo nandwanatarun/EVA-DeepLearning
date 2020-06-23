@@ -141,3 +141,46 @@ You may have noticed the odd distribution of colors in the hidden states. That i
    ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_yQzlE7JseW32VVU-xlOUvQ.png)
    
 Short-term memory is caused by the infamous vanishing gradient problem, which is also prevalent in other neural network architectures. As the RNN processes more steps, it has troubles retaining information from previous steps. As you can see, the information from the word “what” and “time” is almost non-existent at the final time step. Short-Term memory and the vanishing gradient is due to the nature of back-propagation; an algorithm used to train and optimize neural networks. To understand why this is, let’s take a look at the effects of back propagation on a deep feed-forward neural network.
+
+ # TRAINING   
+
+Training a neural network has three major steps.
+
+    First, it does a forward pass and makes a prediction.
+    Second, it compares the prediction to the ground truth using a loss function. The loss function outputs an error value which is an estimate of how poorly the network is performing.
+    Last, it uses that error value to do back propagation which calculates the gradients for each node in the network.
+    
+       ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_8eriEDJZisidMG_yyEDEAA.gif)
+
+The gradient is the value used to adjust the networks internal weights, allowing the network to learn. The bigger the gradient, the bigger the adjustments and vice versa. Here is where the problem lies. When doing back propagation, each node in a layer calculates it’s gradient with respect to the effects of the gradients, in the layer before it.
+
+So if the adjustments to the layers before it is small (why would it be small?), then adjustments to the current layer will be even smaller.
+
+That causes gradients to exponentially shrink as it back propagates down. The earlier layers fail to do any learning as the internal weights are barely being adjusted due to extremely small gradients. And that’s the vanishing gradient problem.
+
+       ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_nGrmK1Ikx7ecZZyTdOCIuQ.gif)
+       
+       Let’s see how this applies to recurrent neural networks. You can think of each time step in a recurrent neural network as a layer. To train a recurrent neural network, you use an application of back-propagation called back-propagation through time. The gradient values will exponentially shrink as it propagates through each time step.
+       
+              ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_Ku54qmCryZVBaIc6g8rjGA.gif)
+              
+Again, the gradient is used to make adjustments in the neural networks weights thus allowing it to learn. Small gradients mean small adjustments. That causes the early layers not to learn.
+
+ 
+
+ 
+
+Because of vanishing gradients, the RNN doesn’t learn the long-range dependencies across time steps. That means that there is a possibility that the word “what” and “time” are not considered when trying to predict the user’s intention. The network then has to make the best guess with “is it?”. That’s pretty ambiguous and would be difficult even for a human. So not being able to learn on earlier time steps causes the network to have a short-term memory.
+
+ 
+
+Ok so RNN’s suffer from short-term memory, so how do we combat that? To mitigate short-term memory, two specialized recurrent neural networks were created. One called Long Short-Term Memory or LSTM’s for short. The other is Gated Recurrent Units or GRU’s. LSTM’s and GRU’s essentially function just like RNN’s, but they’re capable of learning long-term dependencies using mechanisms called “gates.” These gates are different tensor operations that can learn what information to add or remove to the hidden state. Because of this ability, short-term memory is less of an issue for them. 
+
+Assignment:
+
+    Please go through these 4 cod files mentioned above "a lot" of times. 
+    Please go through the content above as well, as we may have question from the content as well! We are expecting you to change things in these files and be ready with answers, like changing activation function, RNN units, etc!
+    You need to answer the questions in the quiz. There is only quiz and no assignment. From now on your assignment if your quiz and vice-versa. 
+    Your quiz is time, so make sure that you have gone through the quiz, else you will not be able to finish the quiz on time. 
+    All the best!
+
