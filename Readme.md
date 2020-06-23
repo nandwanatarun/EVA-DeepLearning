@@ -137,3 +137,14 @@ Last we have the output gate. The output gate decides what the next hidden state
 For those of you who understand better through seeing the code, here is an example using python pseudo-code.
 
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/1_p2yXhtxmYflEUrTC1rCoUA.png)
+
+
+1. First, the previous hidden state and the current input get concatenated. We’ll call it to combine.
+2. Combine gets fed into the forget layer. This layer removes non-relevant data.
+4. A candidate layer is created using combine. The candidate holds possible values to add to the cell state.
+3. Combine also get’s fed into the input layer. This layer decides what data from the candidate should be added to the new cell state.
+5. After computing the forget layer, candidate layer, and the input layer, the cell state is calculated using those vectors and the previous cell state.
+6. The output is then computed.
+7. Pointwise multiplying the output and the new cell state gives us the new hidden state.
+
+That’s it! The control flow of an LSTM network is a few tensor operations and a for a loop. You can use the hidden states for predictions. Combining all those mechanisms, an LSTM can choose which information is relevant to remember or forget during sequence processing.
