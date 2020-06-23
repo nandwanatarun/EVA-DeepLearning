@@ -122,7 +122,7 @@ Ok, so a user types in… what time is it?. To start, we break up the sentence i
   
   Since the final output was created from the rest of the sequence, we should be able to take the final output and pass it to the feed-forward layer to classify an intent.
   
-  ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_5byMk-6ni-dst7l9WKIj5g.gif)
+  ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-2/Images/1_3bKRTcqSbto3CXfwshVwmQ.gif)
   
   Here is some python showcasing the control flow
   
