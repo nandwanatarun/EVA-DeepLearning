@@ -49,7 +49,7 @@ Let's look at the RNN again:
 
 If we start with <Empty> we might Predict Dog. After receiving Dog as the input, there are equal chances of prediction (*) or scares. (That's where the error crops in). 
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/rnn1-2.png)
+
  
  
 # The TanH - Squashing Function
@@ -61,7 +61,7 @@ If we start with <Empty> we might Predict Dog. After receiving Dog as the input,
  
   LETS ADD MEMORY TO OUR NETWORK  
 
- 
+ ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/1svg.svg)
 
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/svg.svg)
 
