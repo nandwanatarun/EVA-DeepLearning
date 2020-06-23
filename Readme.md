@@ -71,7 +71,7 @@ Elementwise multiplication acts like a router, controlling what goes out and wha
  
 We'd like to use a function which is between 0 and 1 for this. We use...
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/1 JHWL_71qml0kP_Imyx4zBg.png)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/1%20JHWL_71qml0kP_Imyx4zBg.png)
  
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-3/Images/rnn2.png)
   
