@@ -176,11 +176,3 @@ Because of vanishing gradients, the RNN doesn’t learn the long-range dependenc
 
 Ok so RNN’s suffer from short-term memory, so how do we combat that? To mitigate short-term memory, two specialized recurrent neural networks were created. One called Long Short-Term Memory or LSTM’s for short. The other is Gated Recurrent Units or GRU’s. LSTM’s and GRU’s essentially function just like RNN’s, but they’re capable of learning long-term dependencies using mechanisms called “gates.” These gates are different tensor operations that can learn what information to add or remove to the hidden state. Because of this ability, short-term memory is less of an issue for them. 
 
-Assignment:
-
-    Please go through these 4 cod files mentioned above "a lot" of times. 
-    Please go through the content above as well, as we may have question from the content as well! We are expecting you to change things in these files and be ready with answers, like changing activation function, RNN units, etc!
-    You need to answer the questions in the quiz. There is only quiz and no assignment. From now on your assignment if your quiz and vice-versa. 
-    Your quiz is time, so make sure that you have gone through the quiz, else you will not be able to finish the quiz on time. 
-    All the best!
-
