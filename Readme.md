@@ -228,9 +228,11 @@ STEP 7  :
 
 The two Critic Targets each take (s`, a`) as input and return two Q-values as output:
 
-LaTeX: Critic1\:\Longrightarrow\:Q_{t1}\left(s',\:a'\right) C r i t i c 1 ⟹ Q t 1 ( s ′ , a ′ )
+C r i t i c 1 ⟹ Q t 1 ( s ′ , a ′ )
 
-LaTeX: Critic2\:\Longrightarrow\:Q_{t2}\left(s',\:a'\right)
+C r i t i c 2 ⟹ Q t 2 ( s ′ , a ′ )
+
+ 
 
 Basically:
 
@@ -238,7 +240,7 @@ Basically:
 
 STEP 8  :
 
-We keep the minimum of these two Q-values: LaTeX: \min\left(Q_{t1},\:Q_{t2}\right) min ( Q t 1 , Q t 2 )
+We keep the minimum of these two Q-values: min ( Q t 1 , Q t 2 )
 
 It represents the approximated values of the next state.
 
@@ -250,17 +252,19 @@ STEP 9
 
 We get the final target of the two Critic Models, which is:
 
-LaTeX: Q_t\:=\:R\:+\:\gamma\ast\min\left(Q_{t1},\:Q_{t2}\right) Q t = R + γ ∗ min ( Q t 1 , Q t 2 )
+Q t = R + γ ∗ min ( Q t 1 , Q t 2 )
 
-where LaTeX: Q_t Q t is the target-Q
+where Q t is the target-Q
 
 STEP 10  :
 
 The two Critic Models each take the couple (s, a) as input and return two Q-values 
 
-LaTeX: CriticModel1\:\Longrightarrow\:Q_1\left(s,\:a\right) C r i t i c M o d e l 1 ⟹ Q 1 ( s , a )
+C r i t i c M o d e l 1 ⟹ Q 1 ( s , a )
 
-LaTeX: CriticModel2\:\Longrightarrow\:Q_2\left(s,\:a\right)
+C r i t i c M o d e l 2 ⟹ Q 2 ( s , a )
+
+
 
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-8/Images/img24.png)
 
@@ -268,7 +272,9 @@ STEP 11  :
 
 We compute the loss coming from the two Critic models: 
 
-LaTeX: Critic\:Loss\:=\:MSELoss\left(Q_1\left(s,\:a\right),\:Q_t\right)\:+\:MSELoss\left(Q_2\left(s,\:a\right),\:Q_t\right)
+CriticLoss = MSELoss( Q1 (s,a) , Qt) + MSELoss(Q2 (s,a), Qt)
+
+ 
 
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-8/Images/img25.png)
 
@@ -306,7 +312,7 @@ Same steps for the Critics
 
 Once every two iterations, we update the weights of the Critic target by Polyak averaging
 
-LaTeX: \theta'\:\longleftarrow\:\tau\theta+\left(1+\tau\right)\theta' θ ′ ⟵ τ θ + ( 1 + τ ) θ ′
+ θ′ ⟵ τθ +( 1 + τ)θ′
 
 Where is the DELAYED part of the T3D?
 
