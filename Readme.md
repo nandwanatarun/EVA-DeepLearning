@@ -98,7 +98,7 @@ ENCODER-DECODER ARCHITECTURE IN RNN/LSTM
 
 The RNN encoder-decoder architecture looks like this [https://medium.com/datadriveninvestor/attention-in-rnns-321fbcd64f05]
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 iK8Wel75Ri55rSZfwAKHCA.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20iK8Wel75Ri55rSZfwAKHCA.jpeg)
 
 The RNN encoder has an input sequence x1, x2, x3, x4. We denote the encoder states by c1, c2, c3. The encoder outputs a single output vector c which is passed as input to the decoder. Like the encoder, the decoder is also a single-layered RNN, we denote the decoder states by s1, s2, s3 and the network’s output by y1, y2, y3, y4.
 
@@ -108,7 +108,7 @@ RNN/LSTM WITH AN ATTENTION MECHANISM
 
 An attention RNN/LSTM looks like this:
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 wnXVyE8LXPfODvB_Z5vu8A.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20wnXVyE8LXPfODvB_Z5vu8A.jpeg)
 
 Our attention model has a single RNN encoder, again with 4-time steps. We denote the encoder's input vectors by LaTeX: x_1,\:x_2,\:x_3,\:x_4 x 1 , x 2 , x 3 , x 4 and the output vectors by LaTeX: h_1,\:h_2,\:h_3,\:h_4 h 1 , h 2 , h 3 , h 4 . 
 
