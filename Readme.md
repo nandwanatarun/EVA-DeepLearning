@@ -4,7 +4,7 @@ Where we left the last few session:
 
 Bellman Equation  
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/1%20AbbOXuPjEtNbFpifAXM7yg.png)
+
 
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/SVG1.png)
 
