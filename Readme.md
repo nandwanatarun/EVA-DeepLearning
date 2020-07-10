@@ -1,6 +1,6 @@
 Reinforcement Learning
 
-![](https://www.youtube.com/watch?v=gn4nRCC9TwQ)
+video Link: https://www.youtube.com/watch?v=gn4nRCC9TwQ
 Reinforcement learning is simultaneously a problem, a class of solution methods that work well on the class of problems, and the field that studies these problems and their solution methods. 
 
 Reinforcement Learning problems involve learning what to do - how to map situations to actions - so as to maximize a numerical reward signal. 
@@ -71,8 +71,7 @@ In the world of AI, we have numbers or digital that act as rewards.
 
 
 There is no programmed algorithm!
-
-[![Alt text for your video](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-5/Images/rewards.png)](https://www.youtube.com/watch?v=ITfBKjBH46E)
+video Link:(https://www.youtube.com/watch?v=ITfBKjBH46E)
 
 BELLMAN EQUATION 
 
@@ -289,6 +288,4 @@ Look at the arrows next to the firepit now!
 ![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-5/Images/maze20.png)
 This is our policy!
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-5/Images/maze1.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-5/Images/maze1.png)
 
