@@ -228,9 +228,9 @@ STEP 7  :
 
 The two Critic Targets each take (s`, a`) as input and return two Q-values as output:
 
-C r i t i c 1 ⟹ Q t 1 ( s ′ , a ′ )
+Critic1 ⟹ Qt1 (s′ , a ′)
 
-C r i t i c 2 ⟹ Q t 2 ( s ′ , a ′ )
+Critic2 ⟹ Q2 (s′ , a′)
 
  
 
@@ -240,7 +240,7 @@ Basically:
 
 STEP 8  :
 
-We keep the minimum of these two Q-values: min ( Q t 1 , Q t 2 )
+We keep the minimum of these two Q-values: min ( Qt1 , Qt2 )
 
 It represents the approximated values of the next state.
 
@@ -252,17 +252,17 @@ STEP 9
 
 We get the final target of the two Critic Models, which is:
 
-Q t = R + γ ∗ min ( Q t 1 , Q t 2 )
+Qt = R + γ ∗ min (Qt1 , Qt2)
 
-where Q t is the target-Q
+where Qt is the target-Q
 
 STEP 10  :
 
 The two Critic Models each take the couple (s, a) as input and return two Q-values 
 
-C r i t i c M o d e l 1 ⟹ Q 1 ( s , a )
+CriticModel1 ⟹ Q1 (s , a)
 
-C r i t i c M o d e l 2 ⟹ Q 2 ( s , a )
+CriticModel2 ⟹ Q2 (s , a)
 
 
 
