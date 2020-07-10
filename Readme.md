@@ -146,7 +146,7 @@ The attention weights are learned using an additional fully connected shallow ne
 The attention weights are learned using the attention fully-connected network and a softmax function:
 
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 wxv56cPyJdrEFSkknrlP-A.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20wxv56cPyJdrEFSkknrlP-A.jpeg)
 
 
 As can be seen in the image above, the fc receives the concatenated vectors LaTeX: \left[s_{i-1},\:h_i\right] [ s i − 1 , h i ] as the input at time step i. The network has a single fc layer, the outputs of the layer are passed through a softmax function computing the attention weights
@@ -154,7 +154,7 @@ As can be seen in the image above, the fc receives the concatenated vectors LaTe
  
 Notice that we are using the same fully-connected network for all the concatenated pairs [s0,h1],[s1,h2],[s2,h3],[s3,h4]
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 jRBjCcGSoVL-rDb_zBXyPQ.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20jRBjCcGSoVL-rDb_zBXyPQ.jpeg)
 
 
 The fc network is trained along with the encoder and decoder using backpropagation, the RNN's prediction error terms are backpropagated backward through the decoder, then through the fc attention network and from there to the encoder.
@@ -173,37 +173,37 @@ The first act performed is the computation of vectors LaTeX: h_1,\:h_2,\:h_3,\:h
 
 These are then used as inputs of the attention mechanism. This is where the decoder is first involved by inputting its initial state vector LaTeX: s_0 s 0 and we have the first attention input sequence  [s0,h1],[s0,h2],[s0,h3],[s0,h4]
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 IT-_Z0arAHdRnbf4T-BUKw.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20IT-_Z0arAHdRnbf4T-BUKw.jpeg)
 
 The attention mechanism computes the first set of attention weights enabling the computation of the first context vector LaTeX: c_1 c 1 . The decoder now uses LaTeX: \left[s_0,\:c_1\right] [ s 0 , c 1 ] and computes the first RNN output LaTeX: y_1 y 1 .
 
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 52xHMRpOX_88hhrtQ70zPw.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%2052xHMRpOX_88hhrtQ70zPw.jpeg)
 
 At the following step, the attention mechanism has as input the sequence  [s1,h1],[s1,h2],[s1,h3],[s1,h4]
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 tXchCn0hBSUau3WO0ViD7w.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20tXchCn0hBSUau3WO0ViD7w.jpeg)
 
 
 It computes a second set of weights enabling computation of the second context vector LaTeX: c_2 c 2 . The decoder uses LaTeX: \left[s_1,\:c_2\right] [ s 1 , c 2 ] and computes the second RNN output LaTeX: y_2 y 2 .
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
 
 This next step should be clear:
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 dCe0Asb9p-kad84eHvvIeg.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20dCe0Asb9p-kad84eHvvIeg.jpeg)
 
 then this:
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 or93mZa0-8Wxd9hQLg_0oA.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20or93mZa0-8Wxd9hQLg_0oA.jpeg)
 
 Then this: 
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 ygL5NkL3cTHy16Wmi7Sd6g.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20ygL5NkL3cTHy16Wmi7Sd6g.jpeg)
 
 and finally this:
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 O3fVgfNEYGTLLFid2DsFhg.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20O3fVgfNEYGTLLFid2DsFhg.jpeg)
 
 In the end we have consumed 4 vectors, and with attention focused on specific vector, we should and then made the prediction for each step. 
 
@@ -213,16 +213,9 @@ Each pixel shows the weight αij of the j-th source word and the i-th target wor
 
  
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 UGr73oPi6f0_OfUIHLsACA.jpeg)
+![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1%20UGr73oPi6f0_OfUIHLsACA.jpeg)
 
 Better illustrations can be found here: https://distill.pub/2016/augmented-rnns/
 
 This was the end of DNN for us. Now we'd be moving to Reinforcement Learning. Early few lectures are on basics so we have time to learn PyTorch. 
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
-
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
-
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
-
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-4/Images/1 Tb0Rxi7IBsl1eJ0rl8700w.jpeg)
