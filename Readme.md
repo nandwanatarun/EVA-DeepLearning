@@ -271,14 +271,7 @@ Let's start some coding:
 • conda install -c conda-forge kivy
 
 • Download these files:https://drive.google.com/file/d/1H7iTOsv54AtafxPnL5zs2_0RoQ9J0sow/view
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
 
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
-![](https://github.com/nandwanatarun/EVA-DeepLearning/blob/Phase2_Session-7/Images/env10.png)
 
 
  
